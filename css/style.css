@@ -76,6 +76,13 @@ body {
   transition: color 0.3s ease;
 }
 
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
 .navbar a:hover {
   color: #8B5CF6;
 }
@@ -381,6 +388,12 @@ body {
   border-radius: 50%;
 }
 
+.info-box a {
+  color: #555;
+  text-decoration: none;  
+  font-weight: 500;
+}
+
 .contact-form form {
   background: #fff;
   padding: clamp(20px, 4vw, 35px);
@@ -435,13 +448,13 @@ body {
 }
 
 .footer h3 {
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(24px, 5vw, 22px);
   margin-bottom: 10px;
   color: #8B5CF6;
 }
 
 .footer-about p {
-  font-size: 14px;
+  font-size: 19px;
   margin-bottom: 15px;
   color: #d1d5db;
 }
@@ -458,11 +471,17 @@ body {
   color: #8B5CF6;
 }
 
+.footer-links ,
+.footer-services  h4 {
+  font-size: 24px
+}
+
 .footer-links ul,
 .footer-services ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 19px;
 }
 
 .footer-links ul li,
@@ -482,9 +501,13 @@ body {
   color: #8B5CF6;
 }
 
+.footer-contact h4 {
+  font-size: 24px;
+}
+
 .footer-contact p {
   margin: 6px 0;
-  font-size: 14px;
+  font-size: 19px;
   color: #d1d5db;
 }
 
@@ -498,9 +521,14 @@ body {
   border-top: 1px solid #374151;
   margin-top: 30px;
   padding-top: 15px;
-  font-size: 14px;
+  font-size: 22px;
   color: #9ca3af;
 }
+
+.copyright p {
+  margin: 0;  
+}
+
 
 .footer-bottom .dev-credit {
   color: #8B5CF6;
