@@ -38,3 +38,22 @@ window.addEventListener('click', (event) => {
         closeModal();
     }
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let sendBtn = this.querySelector("button");
+  sendBtn.innerText = "Sending...";
+
+  emailjs.sendForm("service_5gm9x1w", "template_4e6x8yn", this)
+    .then(() => {
+      alert("✅ Message sent successfully!");
+      sendBtn.innerText = "Send Message";
+      this.reset();
+    }, (error) => {
+      alert("❌ Failed to send. Please try again!");
+      sendBtn.innerText = "Send Message";
+      console.error("Error:", error);
+    });
+});
+
